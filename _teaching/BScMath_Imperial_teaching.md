@@ -4,17 +4,13 @@ collection: teaching
 type: "Undergraduate courses"
 permalink: /teaching/BScMath_Imperial_teaching
 venue: "Imperial College London, Department of Mathematics"
-#date: 2014-01-01
+date: 2014-01-01
 location: "City, Country"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+- Probability and Statistics (Year 1)
+- Probability for Statistics (Year 2)
+- Statistical Modelling I (Year 2)
+- Introduction to Statistical Learning (Years 3 & 4)
+- Mathematics of Business and Economics (Years 3 & 4)
+- Statistical Modelling II (Years 3 & 4)
