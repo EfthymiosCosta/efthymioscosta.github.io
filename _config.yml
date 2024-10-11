@@ -21,8 +21,8 @@ repository               : "github.com/EfthymiosCosta/efthymioscosta.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "sanmarinome3.png"
-  name             : "Your Sidebar Name"
+  avatar           : "sanmarinome3.jpg"
+  name             : # "Your Sidebar Name"
   pronouns         : # example: "she/her"  
   bio              : "PhD Student in Statistical Machine Learning"
   location         : "Huxley 667"
