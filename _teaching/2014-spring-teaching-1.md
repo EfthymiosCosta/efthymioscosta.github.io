@@ -1,9 +1,9 @@
 ---
-title: "Teaching experience 1"
+title: "BSc/MSci Mathematics"
 collection: teaching
-type: "Undergraduate course"
+type: #"Undergraduate course"
 permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
+venue: "Imperial College London, Department of Mathematics"
 date: 2014-01-01
 location: "City, Country"
 ---
