@@ -8,5 +8,13 @@ author_profile: true
 {% include base_path %}
 
 {% for post in site.teaching reversed %}
-<p> {{ post.title }}, {{ post.venue }}</p>
+<h2>{{ post.title }}</h2>
+
+<!-- Display the venue and date (optional) -->
+<p><i>{{ post.venue }}</i></p>
+
+<!-- Display the content of the markdown file -->
+<div>
+  {{ post.content }}
+</div>
 {% endfor %}
