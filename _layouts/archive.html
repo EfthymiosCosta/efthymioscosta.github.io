@@ -24,13 +24,31 @@ layout: default
 </div>
 
 <script>
+  // Toggle visibility of the abstract section
   function toggleAbstract(id) {
-    var element = document.getElementById(id);
-    element.style.display = element.style.display === "none" ? "block" : "none";
+    var abstractElement = document.getElementById(id);
+    var citationElement = document.getElementById('citation' + id.replace('abstract', '')); // Get the associated citation element
+
+    // Show abstract and hide citation
+    if (abstractElement.style.display === "none") {
+      abstractElement.style.display = "block";
+      citationElement.style.display = "none"; // Hide the citation if it's visible
+    } else {
+      abstractElement.style.display = "none";
+    }
   }
 
+  // Toggle visibility of the BibTeX citation
   function toggleCitation(id) {
-    var element = document.getElementById(id);
-    element.style.display = element.style.display === "none" ? "block" : "none";
+    var citationElement = document.getElementById(id);
+    var abstractElement = document.getElementById('abstract' + id.replace('citation', '')); // Get the associated abstract element
+
+    // Show citation and hide abstract
+    if (citationElement.style.display === "none") {
+      citationElement.style.display = "block";
+      abstractElement.style.display = "none"; // Hide the abstract if it's visible
+    } else {
+      citationElement.style.display = "none";
+    }
   }
 </script>
