@@ -18,5 +18,5 @@ citation: '@article{costa2023benchmarking,
   year={2023},
   publisher={Springer}
 }'  # BibTeX Citation
-authors: "Efthymios Costa, Ioanna Papatsouma, and Angelos Markos"  # You can add this if not yet defined
+authors: "<u>Efthymios Costa</u>, Ioanna Papatsouma, and Angelos Markos"  # You can add this if not yet defined
 ---
