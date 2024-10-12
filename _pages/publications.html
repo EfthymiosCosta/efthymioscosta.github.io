@@ -25,8 +25,15 @@ author_profile: true
         {% assign title_shown = true %}
       {% endunless %}
       <div class="publication">
-        <!-- Title and Authors (from post.title and post.authors if you define them) -->
-        <span style="color: rgb(255, 255, 255); background-color: rgb(15, 185, 0); border-radius: 3px; padding: 1px 1px; margin-left: 1px; margin-right: 5px; font-size: 0.6em; display: inline-block; text-align: center; width: 100px;">{{ post.abbr | default: "" }}</span>
+        <!-- Colours for tags/labels -->
+        {% assign background_color = '' %}
+        {% if post.abbr == "Outlier Detection" %}
+          {% assign background_color = 'rgb(0, 0, 255)' %}  <!-- Light blue background -->
+        {% elsif post.abbr == "Cluster Analysis" %}
+          {% assign background_color = 'rgb(0, 148, 185)' %}  <!-- Light green background -->
+        {% endif %}
+        <!-- Tag, Title, Authors, Year (from post.title and post.authors if you define them) -->
+        <span style="color: rgb(255, 255, 255); background-color: '{{ background_color }}'; border-radius: 3px; padding: 1px 1px; margin-left: 1px; margin-right: 5px; font-size: 0.6em; display: inline-block; text-align: center; width: 100px;">{{ post.abbr | default: "" }}</span>
         <h3 style="margin-bottom: 0; margin-top: 10px; display: inline;">{{ post.title }}</h3>
         <p style="margin-bottom: 0; margin-top: 0;"><strong>Authors:</strong> {{ post.authors | default: "Author Unknown" }}</p>
         <p style="margin-bottom: 0; margin-top: 0;"><i>{{ post.venue }}, {{ post.date | date: '%Y' }}</i></p>
