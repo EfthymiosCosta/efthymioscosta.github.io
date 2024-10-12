@@ -24,17 +24,13 @@ layout: default
 </div>
 
 <script>
-  function toggle(id) {
-    // Get all elements with class hidden-content
-    const allHiddenContents = document.querySelectorAll('.hidden-content > div');
+  function toggleAbstract(id) {
+    var element = document.getElementById(id);
+    element.style.display = element.style.display === "none" ? "block" : "none";
+  }
 
-    // Hide all sections except the clicked one
-    allHiddenContents.forEach((content) => {
-      content.style.display = "none"; // Hide all
-    });
-
-    // Show the clicked section
-    const element = document.getElementById(id);
-    element.style.display = "block"; // Always show the clicked section
+  function toggleCitation(id) {
+    var element = document.getElementById(id);
+    element.style.display = element.style.display === "none" ? "block" : "none";
   }
 </script>

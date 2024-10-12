@@ -24,28 +24,31 @@ author_profile: true
         {% assign title_shown = true %}
       {% endunless %}
       <div class="publication">
+        <!-- Title and Authors (from post.title and post.authors if you define them) -->
         <h3>{{ post.title }}</h3>
         <p><strong>Authors:</strong> {{ post.authors | default: "Author Unknown" }}</p>
-      
+    
+        <!-- Buttons for Abstract, PDF, and BibTeX -->
         <div class="buttons">
           {% if post.abstract %}
-            <button onclick="toggle('abstract{{ forloop.index }}')">Abstract</button>
+            <button onclick="toggleAbstract('abstract{{ forloop.index }}')">Abstract</button>
           {% endif %}
           {% if post.paperurl %}
             <button onclick="window.open('{{ post.paperurl }}', '_blank')">PDF</button>
           {% endif %}
           {% if post.citation %}
-            <button onclick="toggle('citation{{ forloop.index }}')">BibTeX</button>
+            <button onclick="toggleCitation('citation{{ forloop.index }}')">BibTeX</button>
           {% endif %}
         </div>
-      
-        <div class="hidden-content">
-          <div id="abstract{{ forloop.index }}" class="abstract" style="display: none;">
-            <p>{{ post.abstract }}</p>
-          </div>
-          <div id="citation{{ forloop.index }}" class="citation" style="display: none;">
-            <pre>{{ post.citation }}</pre>
-          </div>
+    
+        <!-- Hidden Abstract Section -->
+        <div id="abstract{{ forloop.index }}" class="abstract" style="display: none;">
+          <p>{{ post.abstract }}</p>
+        </div>
+    
+        <!-- Hidden BibTeX Citation -->
+        <div id="citation{{ forloop.index }}" class="citation" style="display: none;">
+          <pre>{{ post.citation }}</pre>
         </div>
       </div>
     {% endfor %}
@@ -58,17 +61,23 @@ author_profile: true
 
 
 <script>
-  function toggle(id) {
-    // Get all elements with class hidden-content
-    const allHiddenContents = document.querySelectorAll('.hidden-content > div');
-    
-    // Hide all sections except the clicked one
-    allHiddenContents.forEach((content) => {
-      content.style.display = "none"; // Hide all
-    });
+  // Toggle visibility of the abstract section
+  function toggleAbstract(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "none") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  }
 
-    // Show the clicked section
-    const element = document.getElementById(id);
-    element.style.display = "block"; // Always show the clicked section
+  // Toggle visibility of the BibTeX citation
+  function toggleCitation(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "none") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
   }
 </script>
