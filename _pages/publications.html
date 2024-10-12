@@ -23,7 +23,34 @@ author_profile: true
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      <div class="publication">
+        <!-- Title and Authors (from post.title and post.authors if you define them) -->
+        <h3>{{ post.title }}</h3>
+        <p><strong>Authors:</strong> {{ post.authors | default: "Author Unknown" }}</p>
+    
+        <!-- Buttons for Abstract, PDF, and BibTeX -->
+        <div class="buttons">
+          {% if post.excerpt %}
+            <button onclick="toggleAbstract('abstract{{ forloop.index }}')">Abstract</button>
+          {% endif %}
+          {% if post.paperurl %}
+            <button onclick="window.open('{{ post.paperurl }}', '_blank')">PDF</button>
+          {% endif %}
+          {% if post.citation %}
+            <button onclick="toggleCitation('citation{{ forloop.index }}')">BibTeX</button>
+          {% endif %}
+        </div>
+    
+        <!-- Hidden Abstract Section -->
+        <div id="abstract{{ forloop.index }}" class="abstract" style="display: none;">
+          <p>{{ post.excerpt }}</p>
+        </div>
+    
+        <!-- Hidden BibTeX Citation -->
+        <div id="citation{{ forloop.index }}" class="citation" style="display: none;">
+          <pre>{{ post.citation }}</pre>
+        </div>
+      </div>
     {% endfor %}
   {% endfor %}
 {% else %}
@@ -33,4 +60,24 @@ author_profile: true
 {% endif %}
 
 
+<script>
+  // Toggle visibility of the abstract section
+  function toggleAbstract(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "none") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  }
 
+  // Toggle visibility of the BibTeX citation
+  function toggleCitation(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "none") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  }
+</script>
