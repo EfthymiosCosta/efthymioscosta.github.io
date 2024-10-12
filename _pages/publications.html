@@ -30,7 +30,7 @@ author_profile: true
     
         <!-- Buttons for Abstract, PDF, and BibTeX -->
         <div class="buttons">
-          {% if post.excerpt %}
+          {% if post.abstract %}
             <button onclick="toggleAbstract('abstract{{ forloop.index }}')">Abstract</button>
           {% endif %}
           {% if post.paperurl %}
@@ -43,7 +43,7 @@ author_profile: true
     
         <!-- Hidden Abstract Section -->
         <div id="abstract{{ forloop.index }}" class="abstract" style="display: none;">
-          <p>{{ post.excerpt }}</p>
+          <p>{{ post.abstract }}</p>
         </div>
     
         <!-- Hidden BibTeX Citation -->
