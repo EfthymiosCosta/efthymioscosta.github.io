@@ -24,31 +24,28 @@ author_profile: true
         {% assign title_shown = true %}
       {% endunless %}
       <div class="publication">
-        <!-- Title and Authors (from post.title and post.authors if you define them) -->
         <h3>{{ post.title }}</h3>
         <p><strong>Authors:</strong> {{ post.authors | default: "Author Unknown" }}</p>
-    
-        <!-- Buttons for Abstract, PDF, and BibTeX -->
+      
         <div class="buttons">
           {% if post.abstract %}
-            <button onclick="toggleAbstract('abstract{{ forloop.index }}')">Abstract</button>
+            <button onclick="toggle('abstract{{ forloop.index }}')">Abstract</button>
           {% endif %}
           {% if post.paperurl %}
             <button onclick="window.open('{{ post.paperurl }}', '_blank')">PDF</button>
           {% endif %}
           {% if post.citation %}
-            <button onclick="toggleCitation('citation{{ forloop.index }}')">BibTeX</button>
+            <button onclick="toggle('citation{{ forloop.index }}')">BibTeX</button>
           {% endif %}
         </div>
-    
-        <!-- Hidden Abstract Section -->
-        <div id="abstract{{ forloop.index }}" class="abstract" style="display: none;">
-          <p>{{ post.abstract }}</p>
-        </div>
-    
-        <!-- Hidden BibTeX Citation -->
-        <div id="citation{{ forloop.index }}" class="citation" style="display: none;">
-          <pre>{{ post.citation }}</pre>
+      
+        <div class="hidden-content">
+          <div id="abstract{{ forloop.index }}" class="abstract" style="display: none;">
+            <p>{{ post.abstract }}</p>
+          </div>
+          <div id="citation{{ forloop.index }}" class="citation" style="display: none;">
+            <pre>{{ post.citation }}</pre>
+          </div>
         </div>
       </div>
     {% endfor %}
