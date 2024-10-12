@@ -32,13 +32,13 @@ author_profile: true
         <!-- Buttons for Abstract, PDF, and BibTeX -->
         <div class="buttons">
           {% if post.abstract %}
-            <button onclick="toggleAbstract('abstract{{ forloop.index }}')" style="background-color: rgb(255, 255, 255); color: rgb(0, 8, 117); border: 1px solid rgb(0, 8, 117); border-radius: 5px; padding: 5px 10px; cursor: pointer; transition: background-color 0.3s;  font-size: 0.8em;">Abstract</button>
+            <button onclick="toggleAbstract('abstract{{ forloop.index }}')" style="background-color: rgb(255, 255, 255); color: rgb(0, 8, 117); border: 1px solid rgb(0, 8, 117); border-radius: 5px; padding: 2px 8px; cursor: pointer; transition: background-color 0.3s;  font-size: 0.8em;">Abstract</button>
           {% endif %}
           {% if post.paperurl %}
-            <button onclick="window.open('{{ post.paperurl }}', '_blank')" style="background-color: rgb(255, 255, 255); color: rgb(0, 8, 117); border: 1px solid rgb(0, 8, 117); border-radius: 5px; padding: 5px 10px; cursor: pointer; transition: background-color 0.3s;  font-size: 0.8em;">PDF</button>
+            <button onclick="window.open('{{ post.paperurl }}', '_blank')" style="background-color: rgb(255, 255, 255); color: rgb(0, 8, 117); border: 1px solid rgb(0, 8, 117); border-radius: 5px; padding: 2px 8px; cursor: pointer; transition: background-color 0.3s;  font-size: 0.8em;">PDF</button>
           {% endif %}
           {% if post.citation %}
-            <button onclick="toggleCitation('citation{{ forloop.index }}')" style="background-color: rgb(0, 8, 117); color: rgb(0, 8, 117); border: 1px solid rgb(0, 8, 117); border-radius: 5px; padding: 5px 10px; cursor: pointer; transition: background-color 0.3s; font-size: 0.8em;">BibTeX</button>
+            <button onclick="toggleCitation('citation{{ forloop.index }}')" style="background-color: rgb(255, 255, 255); color: rgb(0, 8, 117); border: 1px solid rgb(0, 8, 117); border-radius: 5px; padding: 2px 8px; cursor: pointer; transition: background-color 0.3s; font-size: 0.8em;">BibTeX</button>
           {% endif %}
         </div>
     
