@@ -27,7 +27,7 @@ author_profile: true
       <div class="publication">
         <!-- Title and Authors (from post.title and post.authors if you define them) -->
         <span style="color: rgb(255, 255, 255); background-color: rgb(15, 185, 0); border-radius: 3px; padding: 1px 1px; margin-left: 1px; font-size: 0.6em; display: inline-block; text-align: center; width: 100px;">{{ post.abbr | default: "" }}</span>
-        <h3 style="margin-bottom: 0; margin-top: 10px;">{{ post.title }}</h3>
+        <h3 style="margin-bottom: 0; margin-top: 10px; display: inline;">{{ post.title }}</h3>
         <p style="margin-bottom: 0; margin-top: 0;"><strong>Authors:</strong> {{ post.authors | default: "Author Unknown" }}</p>
         <p style="margin-bottom: 0; margin-top: 0;"><i>{{ post.venue }}, {{ post.date | date: '%Y' }}</i></p>
     
