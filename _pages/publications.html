@@ -67,7 +67,7 @@ author_profile: true
     var citationElement = document.getElementById('citation' + id.replace('abstract', '')); // Get the associated citation element
 
     // Show abstract and hide citation
-    if (abstractElement.style.display === "none") {
+    if (abstractElement.style.display === "none" || abstractElement.style.display === "") {
       abstractElement.style.display = "block";
       citationElement.style.display = "none"; // Hide the citation if it's visible
     } else {
@@ -81,7 +81,7 @@ author_profile: true
     var abstractElement = document.getElementById('abstract' + id.replace('citation', '')); // Get the associated abstract element
 
     // Show citation and hide abstract
-    if (citationElement.style.display === "none") {
+    if (citationElement.style.display === "none" || citationElement.style.display === "") {
       citationElement.style.display = "block";
       abstractElement.style.display = "none"; // Hide the abstract if it's visible
     } else {
