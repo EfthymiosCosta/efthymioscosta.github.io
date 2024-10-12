@@ -32,22 +32,22 @@ author_profile: true
         <!-- Buttons for Abstract, PDF, and BibTeX -->
         <div class="buttons">
           {% if post.abstract %}
-            <button onclick="toggleAbstract('abstract{{ forloop.index }}')">Abstract</button>
+            <button onclick="toggleAbstract('abstract{{ forloop.index }}')" style="background-color: #007BFF; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; transition: background-color 0.3s;">Abstract</button>
           {% endif %}
           {% if post.paperurl %}
-            <button onclick="window.open('{{ post.paperurl }}', '_blank')">PDF</button>
+            <button onclick="window.open('{{ post.paperurl }}', '_blank')" style="background-color: #007BFF; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; transition: background-color 0.3s;">PDF</button>
           {% endif %}
           {% if post.citation %}
-            <button onclick="toggleCitation('citation{{ forloop.index }}')">BibTeX</button>
+            <button onclick="toggleCitation('citation{{ forloop.index }}')" style="background-color: #007BFF; color: white; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer; transition: background-color 0.3s;">BibTeX</button>
           {% endif %}
         </div>
     
         <!-- Hidden Abstract Section -->
-        <div id="abstract{{ forloop.index }}" class="abstract" style="display: none; background-color: #ffffff; border: 1px solid #ddd; border-radius: 5px; padding: 10px; margin-top: 10px; font-size: 0.9em;">
+        <div id="abstract{{ forloop.index }}" class="abstract" style="display: none; background-color: #ffffff; border: 1px solid #ddd; border-radius: 5px; padding: 10px; margin-top: 5px; font-size: 0.8em;">
           <p style="margin: 0;">{{ post.abstract }}</p>
       </div>
   
-      <div id="citation{{ forloop.index }}" class="citation" style="display: none; background-color: #ffffff; border: 1px solid #ddd; border-radius: 5px; padding: 10px; margin-top: 10px; font-size: 0.9em;">
+      <div id="citation{{ forloop.index }}" class="citation" style="display: none; background-color: #ffffff; border: 1px solid #ddd; border-radius: 5px; padding: 10px; margin-top: 5px; font-size: 0.8em;">
           <pre style="margin: 0;">{{ post.citation }}</pre>
       </div>
       </div>
