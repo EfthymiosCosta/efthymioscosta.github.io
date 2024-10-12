@@ -1,8 +1,8 @@
 .box-style {
-    border: 1px solid #ddd; /* Add border */
+    border: 1px solid #ff0000; /* Add border */
     border-radius: 5px; /* Rounded corners */
     padding: 10px; /* Inner spacing */
     margin: 5px 0; /* Space between boxes */
     background-color: #f9f9f9; /* Background color */
-    font-size: 14px; /* Smaller font size */
+    font-size: 10px; /* Smaller font size */
 }
