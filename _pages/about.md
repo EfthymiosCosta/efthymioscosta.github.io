@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Efthymios Costa"
+title: "About"
 author_profile: true
 redirect_from: 
   - /about/
