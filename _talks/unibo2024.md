@@ -8,4 +8,4 @@ date: 2024-02-01
 location: "Bologna, Italy"
 ---
 
-Presentation Title: Department of Statistical Sciences "Paolo Fortunati", University of Bologna"A Deterministic Information Bottleneck Method for Clustering Mixed-Type Data". [(slides)](https://drive.google.com/file/d/169A6donyErDGpdvdnjiJ3extQCyczuuI/view?usp=sharing)
+**Presentation Title:** "Outlier detection for mixed-type data: A novel approach". [(slides)](https://drive.google.com/file/d/1m2IqeW7paWfGcmhA99Z8oRSU17NSzHlB/view?usp=sharing)
