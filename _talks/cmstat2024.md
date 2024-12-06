@@ -8,4 +8,4 @@ date: 2024-12-14
 location: "London, United Kingdom"
 ---
 
-**Poster Title:** "A Deterministic Information Bottleneck Method for Clustering Mixed-Type Data". [(slides TBA)](https://arxiv.org/abs/2407.03389)
+**Presentation Title:** "A Deterministic Information Bottleneck Method for Clustering Mixed-Type Data". [(slides TBA)](https://arxiv.org/abs/2407.03389)
