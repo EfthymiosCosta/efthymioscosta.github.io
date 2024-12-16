@@ -3,8 +3,8 @@ title: "A Deterministic Information Bottleneck Method for Clustering Mixed-Type 
 collection: publications
 category: preprints
 permalink: /publication/costa2024_dibmix
-abstract: "In this paper, we present an information-theoretic method for clustering mixed-type data, that is, data consisting of both continuous and categorical variables. The method is a variant of the Deterministic Information Bottleneck algorithm which optimally compresses the data while retaining relevant information about the underlying structure. We compare the performance of the proposed method to that of three well-established clustering methods (KAMILA, K-Prototypes, and Partitioning Around Medoids with Gower's dissimilarity) on simulated and real-world datasets. The results demonstrate that the proposed approach represents a competitive alternative to conventional clustering techniques under specific conditions."  # Abstract
-date: 2024-08-07
+abstract: "In this paper, we present an information-theoretic method for clustering mixed-type data, that is, data consisting of both continuous and categorical variables. The proposed approach is built on the deterministic variant of the Information Bottleneck algorithm, designed to optimally compress data while preserving its relevant structural information. We evaluate the performance of our method against four well-established clustering techniques for mixed-type data -- KAMILA, K-Prototypes, Factor Analysis for Mixed Data with K-Means, and Partitioning Around Medoids using Gower's dissimilarity -- using both simulated and real-world datasets. The results highlight that the proposed approach offers a competitive alternative to traditional clustering techniques, particularly under specific conditions where heterogeneity in data poses significant challenges."  # Abstract
+date: 2024-12-13
 venue: 'arXiv preprint'
 abbr: "Cluster Analysis"
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
