@@ -8,4 +8,4 @@ date: 2025-05-19
 location: "Stresa, Italy"
 ---
 
-**Presentation Title:** TBC
+**Presentation Title:** "A novel framework for quantifying nominal outlyingness". (slides TBC)
