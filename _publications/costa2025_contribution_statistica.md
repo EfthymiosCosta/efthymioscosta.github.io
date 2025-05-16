@@ -3,7 +3,7 @@ title: "Contribution to the discussion of Dümbgen and Davies (2025) ''Connectin
 collection: publications
 category: contributions
 permalink: /publication/costa2025_contribution_statistica
-abstract: ''  # Abstract
+#abstract: ''  # Abstract
 date: 2025-05-15
 venue: 'Statistica (to appear)'
 abbr: "Statistical Inference"
