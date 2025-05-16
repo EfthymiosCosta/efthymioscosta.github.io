@@ -32,6 +32,9 @@ author_profile: true
         {% elsif post.abbr == "Cluster Analysis" %}
           {% assign background_color = 'rgb(0, 148, 185)' %}  <!-- Light green background -->
         {% endif %}
+        {% elsif post.abbr == "Statistical Inference" %}
+          {% assign background_color = 'rgb(204, 0, 0)' %}  <!-- Red background -->
+        {% endif %}
         <!-- Tag, Title, Authors, Year (from post.title and post.authors if you define them) -->
         <span style="color: rgb(255, 255, 255); background-color: {{ background_color }}; border-radius: 3px; padding: 1px 1px; margin-left: 1px; margin-right: 5px; font-size: 0.6em; display: inline-block; text-align: center; width: 100px;">{{ post.abbr | default: "" }}</span>
         <h3 style="margin-bottom: 0; margin-top: 10px; display: inline;">{{ post.title }}</h3>
