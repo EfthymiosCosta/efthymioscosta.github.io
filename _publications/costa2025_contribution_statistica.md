@@ -4,7 +4,7 @@ collection: publications
 category: contributions
 permalink: /publication/costa2025_contribution_statistica
 #abstract: ''  # Abstract
-date: 2025-05-16
+date: 2025-05-15
 venue: 'Statistica (to appear)'
 abbr: "Statistical Inference"
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
