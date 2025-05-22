@@ -4,7 +4,7 @@ collection: talks
 type: "Presentation"
 permalink: /talks/icors2025
 venue: "Hotel La Palma"
-date: 2025-05-19
+date: 2025-05-21
 location: "Stresa, Italy"
 ---
 
