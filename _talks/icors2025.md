@@ -8,4 +8,4 @@ date: 2025-05-19
 location: "Stresa, Italy"
 ---
 
-**Presentation Title:** "A novel framework for quantifying nominal outlyingness". (slides TBC)
+**Presentation Title:** "A novel framework for quantifying nominal outlyingness". [(slides)](https://drive.google.com/file/d/1AgQE421QZRxRARCZBiSBg08oP1TRarMf/view?usp=sharing)
