@@ -7,11 +7,11 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.awards %}
-<h2>{{ post.title }}</h2>
-
-<!-- Display the content of the markdown file -->
-<div>
-  {{ post.content }}
-</div>
+{% assign sorted_awards = site.awards | sort: "date" | reverse %}
+{% for post in sorted_awards %}
+  <h2>{{ post.title }}</h2>
+  <p><strong>{{ post.date | date: "%B %Y" }}</strong></p>
+  <div>
+    {{ post.content }}
+  </div>
 {% endfor %}
