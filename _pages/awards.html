@@ -1,0 +1,17 @@
+---
+layout: default
+title: "Funding & Awards"
+permalink: /awards/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% for post in site.awards %}
+<h2>{{ post.title }}</h2>
+
+<!-- Display the content of the markdown file -->
+<div>
+  {{ post.content }}
+</div>
+{% endfor %}
