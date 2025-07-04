@@ -6,4 +6,4 @@ date: 2025-05-16
 location: "City, Country"
 ---
 
-Nomination for the Faculty of Natural Sciences Prize for excellence in teaching and learning.
+Highly commended nomination for the Faculty of Natural Sciences Prize for excellence in teaching and learning.
