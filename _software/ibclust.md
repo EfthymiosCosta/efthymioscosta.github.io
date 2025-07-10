@@ -1,8 +1,8 @@
 ---
 title: "IBclust"
-excerpt: "Description of IBclust"  
 date: 2025-05-30
-location: "City, Country"
+permalink: /software/ibclust/
+logo: /images/IBclust_logo_cran.png
+version: "1.2"
 ---
-
-Full description here...
+Clustering ... 
