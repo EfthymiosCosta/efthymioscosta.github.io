@@ -6,14 +6,3 @@ collection: software
 entries_layout: list
 author_profile: true
 ---
-
-{% include base_path %}
-
-{% assign sorted_software = site.software | sort: "date" | reverse %}
-{% for post in sorted_software %}
-  <h2>{{ post.title }}</h2>
-  <p><strong>{{ post.date | date: "%B %Y" }}</strong></p>
-  <div>
-    {{ post.content }}
-  </div>
-{% endfor %}
