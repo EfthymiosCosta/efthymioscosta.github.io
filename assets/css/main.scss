@@ -42,16 +42,33 @@
 
 .software-index {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
+
 .software-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   border: 1px solid #eee;
   border-radius: 8px;
   padding: 1rem;
-  text-align: center;
 }
+
 .software-thumb {
+  /* Scale the image ~1.5× its natural size */
+  transform: scale(1.5);
+  transform-origin: left top;
+  /* Ensure it doesn’t overflow its container */
   max-width: 100px;
+  display: block;
+}
+
+.software-details {
+  flex: 1;
+}
+
+.software-details h2 {
+  margin-top: 0;
   margin-bottom: 0.5rem;
 }

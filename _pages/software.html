@@ -13,22 +13,24 @@ no_limit: true
   {% assign projects = site.software | sort: "title" %}
   {% for proj in projects %}
     <div class="software-card">
-      <a href="{{ proj.url | relative_url }}">
-        {% if proj.logo %}
-          <img
-            src="{{ proj.logo | relative_url }}"
-            alt="{{ proj.title }} logo"
-            class="software-thumb"
-          >
+      <img
+        src="{{ proj.logo | relative_url }}"
+        alt="{{ proj.title }} logo"
+        class="software-thumb"
+      >
+      <div class="software-details">
+        <h2>
+          <a href="{{ proj.github | default: proj.url | relative_url }}" target="_blank">
+            {{ proj.title }}
+          </a>
+        </h2>
+        {% if proj.version %}
+          <p><strong>Version:</strong> {{ proj.version }}</p>
         {% endif %}
-        <h2>{{ proj.title }}</h2>
-      </a>
-      {% if proj.version %}
-        <p><strong>Version:</strong> {{ proj.version }}</p>
-      {% endif %}
-      {% if proj.excerpt %}
-        <p>{{ proj.excerpt | strip_html | truncate: 120 }}</p>
-      {% endif %}
+        {% if proj.excerpt %}
+          <p>{{ proj.excerpt | strip_html | truncate: 120 }}</p>
+        {% endif %}
+      </div>
     </div>
   {% endfor %}
 </div>
