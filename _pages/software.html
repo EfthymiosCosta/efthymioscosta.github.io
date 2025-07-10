@@ -9,4 +9,26 @@ author_profile: true
 no_limit: true 
 ---
 
-Test.
+<div class="software-index">
+  {% assign projects = site.software | sort: "title" %}
+  {% for proj in projects %}
+    <div class="software-card">
+      <a href="{{ proj.url | relative_url }}">
+        {% if proj.logo %}
+          <img
+            src="{{ proj.logo | relative_url }}"
+            alt="{{ proj.title }} logo"
+            class="software-thumb"
+          >
+        {% endif %}
+        <h2>{{ proj.title }}</h2>
+      </a>
+      {% if proj.version %}
+        <p><strong>Version:</strong> {{ proj.version }}</p>
+      {% endif %}
+      {% if proj.excerpt %}
+        <p>{{ proj.excerpt | strip_html | truncate: 120 }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
