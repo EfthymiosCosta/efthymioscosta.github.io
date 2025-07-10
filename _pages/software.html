@@ -30,7 +30,7 @@ no_limit: true
           <p><strong>Version:</strong> {{ proj.version }}</p>
         {% endif %}
         {% if proj.excerpt %}
-          <p>{{ proj.excerpt | strip_html | truncate: 120 }}</p>
+          <p>{{ proj.excerpt | strip_html }}</p>
         {% endif %}
       </div>
     </div>
