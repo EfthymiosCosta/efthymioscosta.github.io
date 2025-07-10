@@ -42,13 +42,12 @@
 
 .software-index {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
 .software-card {
   display: flex;
-  align-items: center;
+  align-items: flex-start;  /* logo & text top-aligned */
   gap: 1rem;
   border: 1px solid #eee;
   border-radius: 8px;
@@ -56,12 +55,9 @@
 }
 
 .software-thumb {
-  /* Scale the image ~1.5× its natural size */
-  transform: scale(1.5);
-  transform-origin: left top;
-  /* Ensure it doesn’t overflow its container */
-  max-width: 100px;
-  display: block;
+  flex-shrink: 0;         /* don’t let it shrink in flex */
+  width: 150px;           /* ~1.5× an original 100px logo */
+  height: auto;
 }
 
 .software-details {
