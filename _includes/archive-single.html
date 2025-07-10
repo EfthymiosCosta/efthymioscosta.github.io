@@ -1,3 +1,23 @@
+{% comment %} ADD THIS SECTION AT THE TOP {% endcomment %}
+{% if include.type == "grid" and post.collection == 'software' %}
+  <div class="grid__item software-item">
+    <article>
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      {% if post.excerpt %}
+        <p>{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>
+      {% endif %}
+      {% if post.github %}
+        <a href="https://github.com/{{ post.github }}" class="btn btn--github">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      {% endif %}
+    </article>
+  </div>
+  {% continue %} {% comment %} Skip normal processing for software grid items {% endcomment %}
+{% endif %}
+
+{% comment %} KEEP YOUR EXISTING CODE BELOW {% endcomment %}
+
 {% include base_path %}
 
 {% if post.header.teaser %}
