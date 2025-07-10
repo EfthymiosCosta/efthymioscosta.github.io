@@ -1,10 +1,36 @@
----
 layout: archive
 title: "Software"
 permalink: /software/
-collection: software
-entries_layout: list  # Changed from 'list'
-show_excerpts: true   # Critical for showing descriptions
+archive: software
+entries_layout: list 
+show_excerpts: true  
 author_profile: true
 no_limit: true 
 ---
+
+<h3>DEBUG: software collection contains…</h3>
+<pre>{{ site.software | map: "title" | inspect }}</pre>
+
+<div class="software-index">
+  {% assign projects = site.software | sort: "date" | reverse %}
+  {% for proj in projects %}
+    <div class="software-card">
+      <a href="{{ proj.url | relative_url }}">
+        {% if proj.logo %}
+          <img
+            src="{{ proj.logo | relative_url }}"
+            alt="{{ proj.title }} logo"
+            class="software-thumb"
+          >
+        {% endif %}
+        <h2>{{ proj.title }}</h2>
+      </a>
+      {% if proj.version %}
+        <p><strong>Version:</strong> {{ proj.version }}</p>
+      {% endif %}
+      {% if show_excerpts %}
+        <p>{{ proj.excerpt | strip_html | truncate: 120 }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
