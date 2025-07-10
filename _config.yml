@@ -229,7 +229,7 @@ collections:
     permalink: /:collection/:path/
   software:
     output: true
-    permalink: /:collection/:path/
+    permalink: /software/:path/
 
 
 
@@ -292,7 +292,7 @@ defaults:
       path: ""
       type: software
     values:
-      layout: software
+      layout: single
       author_profile: true
       share: true
 
