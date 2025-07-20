@@ -8,4 +8,4 @@ date: 2024-02-01
 location: "Bologna, Italy"
 ---
 
-**Presentation Title:** "Outlier detection for mixed-type data: A novel approach". [(slides)](https://drive.google.com/file/d/1m2IqeW7paWfGcmhA99Z8oRSU17NSzHlB/view?usp=sharing)
+**Presentation Title:** "Outlier detection for mixed-type data: A novel approach". [(slides)](https://drive.google.com/file/d/1X227uVnncgBTKYKmI33r6agpRyC91q1h/view?usp=sharing)
