@@ -1,7 +1,7 @@
 ---
 title: "International Conference on Robust Statistics (ICORS 2025)"
 collection: talks
-type: "Presentation"
+type: "Invited Speaker"
 permalink: /talks/icors2025
 venue: "Hotel La Palma"
 date: 2025-05-21

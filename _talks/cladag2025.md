@@ -1,7 +1,7 @@
 ---
 title: "15th Scientific Meeting of the Classification and Data Analysis Group (CLADAG-VOC 2025)"
 collection: talks
-type: "Presentation"
+type: "Invited Speaker"
 permalink: /talks/cladag2025
 venue: "University of Naples Federico II"
 date: 2025-09-08
