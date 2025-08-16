@@ -30,19 +30,48 @@ layout: default
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
-        {% if page.modified %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
-        {% elsif page.date %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
-        {% endif %}
-        {% if page.talk_type %}<p>{{page.talk_type}} at {{ page.venue }},  {{page.location}} {% endif %}
+          {% if page.modified %}
+            <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
+          {% elsif page.date %}
+            <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+          {% endif %}
 
+          {%- comment -%}
+          Build a clean header meta line from existing fields only.
+          Omit `talk_type` entirely if this is a chaired session (chaired: true).
+          {%- endcomment -%}
+          {%- assign header_parts = "" | split: "" -%}
+          {%- unless page.chaired == true -%}
+            {%- if page.talk_type and page.talk_type != "" -%}
+              {%- assign header_parts = header_parts | push: page.talk_type -%}
+            {%- endif -%}
+          {%- endunless -%}
+          {%- if page.venue and page.venue != "" -%}
+            {%- assign header_parts = header_parts | push: page.venue -%}
+          {%- endif -%}
+          {%- if page.location and page.location != "" -%}
+            {%- assign header_parts = header_parts | push: page.location -%}
+          {%- endif -%}
+          {%- if header_parts.size > 0 -%}
+            <p class="page__meta">{{ header_parts | join: ", " }}</p>
+          {%- endif -%}
         </header>
       {% endunless %}
 
       <section class="page__content" itemprop="text">
         {{ content }}
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+
+        {% if page.chaired == true %}
+          {% include chaired-speakers.html %}
+        {% endif %}
+
+        {% if page.link %}
+          <div>
+            <a href="{{ page.link }}" class="btn">
+              {{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}
+            </a>
+          </div>
+        {% endif %}
       </section>
 
       <footer class="page__meta">

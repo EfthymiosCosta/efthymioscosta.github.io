@@ -1,0 +1,12 @@
+{% if page.speakers and page.speakers.size > 0 %}
+  <h3>Speakers & Presentation Titles</h3>
+  <ul class="speakers-list">
+    {% for s in page.speakers %}
+      <li>
+        {% if s.link %}<a href="{{ s.link }}">{% endif %}{{ s.name }}{% if s.link %}</a>{% endif %}
+        {% if s.affiliation %} — {{ s.affiliation }}{% endif %}
+        {% if s.talk %}: <em>{{ s.talk }}</em>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
