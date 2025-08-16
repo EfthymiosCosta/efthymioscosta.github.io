@@ -6,11 +6,23 @@ author_profile: true
 ---
 
 {% if site.talkmap_link == true %}
-
 <p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
 {% endif %}
 
-{% for post in site.talks reversed %}
+{% comment %}
+Split the talks into chaired vs spoken using a front-matter flag: chaired: true
+{% endcomment %}
+{% assign chaired_items = site.talks | where_exp: 't','t.chaired == true' | sort: 'date' | reverse %}
+{% assign spoken_items  = site.talks | where_exp: 't','t.chaired != true' | sort: 'date' | reverse %}
+
+<h2 id="talks">Talks & Presentations</h2>
+{% for post in spoken_items %}
   {% include archive-single-talk.html %}
 {% endfor %}
+
+{% if chaired_items and chaired_items.size > 0 %}
+  <h2 id="chaired">Chaired Sessions</h2>
+  {% for post in chaired_items %}
+    {% include archive-single-talk.html %}
+  {% endfor %}
+{% endif %}
