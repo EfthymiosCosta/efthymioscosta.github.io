@@ -8,4 +8,4 @@ date: 2025-09-08
 location: "Naples, Italy"
 ---
 
-**Presentation Title:** "Cluster Analysis From an Information-Theoretic Viewpoint".
+**Presentation Title:** "Cluster Analysis From an Information-Theoretic Viewpoint". [(slides)](https://drive.google.com/file/d/1k1Yx4ZBJ2bd5l5NR9N5krfuqDLFWpyAH/view?usp=sharing)
