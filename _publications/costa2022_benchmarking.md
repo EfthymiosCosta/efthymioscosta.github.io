@@ -8,7 +8,7 @@ date: 2023-01-01
 venue: 'Advances in Data Analysis and Classification'
 abbr: "Cluster Analysis"
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://link.springer.com/article/10.1007/s11634-022-00521-7'  # Link to PDF
+paperurl: 'https://doi.org/10.1007/s11634-022-00521-7'  # Link to PDF
 citation: '@article{costa2023benchmarking,
   title={Benchmarking distance-based partitioning methods for mixed-type data},
   author={Costa, Efthymios and Papatsouma, Ioanna and Markos, Angelos},

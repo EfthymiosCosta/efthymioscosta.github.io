@@ -8,11 +8,10 @@ date: 2025-11-25
 venue: 'Statistica'
 abbr: "Statistical Inference"
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://rivista-statistica.unibo.it/article/view/20656'
+paperurl: 'https://doi.org/10.60923/issn.1973-2201/20656'
 citation: '@article{CostaPapatsouma2024,
   title={Discussion of the Paper "Connecting Model-Based and Model-Free Approaches to Linear Least Squares Regression" by Lutz Dümbgen and Laurie Davies (2024)},
   volume={84},
-  url={https://rivista-statistica.unibo.it/article/view/20656},
   DOI={10.60923/issn.1973-2201/20656},
   number={2},
   journal={Statistica},

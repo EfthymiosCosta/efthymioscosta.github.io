@@ -8,7 +8,7 @@ date: 2025-04-20
 venue: 'Data Science, Classification, and Artificial Intelligence for Modeling Decision Making (IFCS 2024)'
 abbr: "Cluster Analysis"
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://link.springer.com/chapter/10.1007/978-3-031-85870-3_9'  # Link to PDF
+paperurl: 'https://doi.org/10.1007/978-3-031-85870-3_9'  # Link to PDF
 citation: '@inproceedings{costa2024deterministic,
   title={A Deterministic Information Bottleneck Method for Clustering Mixed-Type Data},
   author={Costa, Efthymios and Papatsouma, Ioanna and Markos, Angelos},
