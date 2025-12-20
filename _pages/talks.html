@@ -21,7 +21,7 @@ Split the talks into chaired vs spoken using a front-matter flag: chaired: true
 {% endfor %}
 
 {% if chaired_items and chaired_items.size > 0 %}
-  <h2 id="chaired">Chaired Sessions</h2>
+  <h2 id="chaired">Organised Sessions</h2>
   {% for post in chaired_items %}
     {% include archive-single-talk.html %}
   {% endfor %}
