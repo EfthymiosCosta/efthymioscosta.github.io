@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-As of October 2025, I am a Research Associate with teaching duties in Statistics at Imperial College London, working with Professor [Axel Gandy](https://www.ma.imperial.ac.uk/~agandy/index.html).
+As of October 2025, I am a Research Associate with teaching duties in Statistics at Imperial College London, working with Professor [Axel Gandy](https://www.ma.imperial.ac.uk/~agandy/index.html). I am also one of the Postdoc & Fellows Representatives at the Department of Mathematics.
 
 Prior to this position, I was a PhD student at Imperial College London in the Statistics and Machine Learning Centre for Doctoral Training ([StatML CDT](https://statml.io/), 2021 Cohort), under the academic supervision of Dr [Ioanna Papatsouma](https://profiles.imperial.ac.uk/i.papatsouma) and Professor [Alastair Young](https://profiles.imperial.ac.uk/alastair.young).
 
