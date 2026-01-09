@@ -16,5 +16,6 @@ I was also a visiting student at the University of Bologna, working under the su
 I am interested in a broad range of topics in methodological and multivariate statistics, as well as in machine learning. My research is currently centred on the confluence of unsupervised learning methodologies for mixed-type data with concepts of robustness. 
 
 ### Professional Memberships
-- Fellow, Royal Statistical Society  
+- Fellow, Royal Statistical Society 
+- Member, British Data Science Society 
 - Member, Cyprus Statistical Society
