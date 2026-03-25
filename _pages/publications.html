@@ -57,7 +57,7 @@ author_profile: true
     
         <!-- Hidden Abstract Section -->
         <div id="abstract{{ forloop.index }}" class="abstract" style="display: none; background-color: #ffffff; border: 1px solid rgb(0, 8, 117); border-radius: 5px; padding: 10px; margin-top: 5px; font-size: 0.8em;">
-          <div style="margin: 0;">{{ post.abstract | markdownify }}</div>
+          <div style="margin: 0;" class="abstract-body">{{ post.abstract | markdownify }}</div>
       </div>
   
       <div id="citation{{ forloop.index }}" class="citation" style="display: none; background-color: #ffffff; border: 1px solid rgb(0, 8, 117); border-radius: 5px; padding: 10px; margin-top: 5px; font-size: 0.8em;">
@@ -99,6 +99,11 @@ author_profile: true
     </li>
   </ul>
 </div>
+
+<style>
+  .abstract-body > p:first-child { margin-top: 0; }
+  .abstract-body > p:last-child { margin-bottom: 0; }
+</style>
 
 <script>
   // Toggle visibility of the abstract section
