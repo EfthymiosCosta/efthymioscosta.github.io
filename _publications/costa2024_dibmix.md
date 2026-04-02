@@ -14,9 +14,9 @@ citation: '@article{costa2026dibmix,
   author={Costa, Efthymios and Papatsouma, Ioanna and Markos, Angelos},
   journal={Pattern Recognition},
   doi={10.1016/j.patcog.2026.113580},
-  volume={},
+  volume={179},
   number={},
-  pages={},
+  pages={113580},
   year={2026},
   publisher={Elsevier}
 }'  # BibTeX Citation
