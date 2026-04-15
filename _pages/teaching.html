@@ -7,14 +7,6 @@ author_profile: true
 
 {% include base_path %}
 
-I am also supervising a number of students on their final year project for the BSc/MSci Mathematics degree and MSc Statistics students on their dissertation at Imperial College London.
-<br><br>
-I have been an <a href="https://www.advance-he.ac.uk/fellowship/associate-fellowship">Associate Fellow of Advance HE (AFHEA)</a> since February 2024. I am also an ambassador of the MSc Statistics programme at Imperial College London, in recognition of outstanding contributions to the running and delivery of the programme.
-<br><br>
-In the academic year 2024-2025, I was a highly commended nominee for the Faculty of Natural Sciences (FoNS) Prize for Excellence in teaching and learning at the FoNS Annual Prizes 2025.
-<br><br>
-During my PhD at Imperial College London, I have been actively involved in several undergraduate & postgraduate courses as a (Senior) Graduate Teaching Assistant (GTA) or as a marker (list of modules below).
-
 {% assign lead_modules = site.teaching | where: "role", "Module Lead" %}
 {% assign gta_modules = site.teaching | where_exp: "post", "post.role != 'Module Lead'" %}
 
@@ -24,11 +16,18 @@ During my PhD at Imperial College London, I have been actively involved in sever
 <h3>{{ post.title }}</h3>
 <p><i>{{ post.venue }}</i> &ndash; {{ post.year }}, {{ post.term }}</p>
 {% if post.course_url %}
-<p><a href="{{ post.course_url }}">Course notes and resources →</a></p>
+<p><a href="{{ post.course_url }}">(Course notes and resources)</a></p>
 {% endif %}
-<div>{{ post.content }}</div>
 {% endfor %}
 {% endif %}
+
+I am also supervising a number of students on their final year project for the BSc/MSci Mathematics degree and MSc Statistics students on their dissertation at Imperial College London.
+<br><br>
+I have been an <a href="https://www.advance-he.ac.uk/fellowship/associate-fellowship">Associate Fellow of Advance HE (AFHEA)</a> since February 2024. I am also an ambassador of the MSc Statistics programme at Imperial College London, in recognition of outstanding contributions to the running and delivery of the programme.
+<br><br>
+In the academic year 2024-2025, I was a highly commended nominee for the Faculty of Natural Sciences (FoNS) Prize for Excellence in teaching and learning at the FoNS Annual Prizes 2025.
+<br><br>
+During my PhD at Imperial College London, I have been actively involved in several undergraduate & postgraduate courses as a (Senior) Graduate Teaching Assistant (GTA) or as a marker (list of modules below).
 
 <h2>Graduate Teaching Assistant</h2>
 {% for post in gta_modules %}
