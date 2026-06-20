@@ -5,5 +5,6 @@ var addressPoints = [
   ["Berlin, Germany", 52.52437, 13.41053],
   ["Stresa, Italy", 45.8882, 8.5258],
   ["Larnaca, Cyprus", 35.0083, 33.6968],
-  ["Naples, Italy", 40.85631, 14.24641]
+  ["Naples, Italy", 40.85631, 14.24641],
+  ["Halifax, Canada", 44.6475, -63.5905]
 ];
