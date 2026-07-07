@@ -8,15 +8,15 @@ date: 2026-07-02
 venue: 'Submitted'
 abbr: "Cluster Analysis"
 #slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-#paperurl: 'https://arxiv.org/abs/2606.26324'  # Link to PDF
-#citation: '@misc{costathompson2026,
-# title={Spectrally Tuned Bandwidth Selection for Kernel Fuzzy Relational Clustering }, 
-# author={Costa, Efthymios and R.J. Thompson, John},
-# year={2026},
-# eprint={2606.26324},
-# archivePrefix={arXiv},
-# primaryClass={stat.ME},
-# howpublished = {arXiv preprint},
-# url = {https://arxiv.org/abs/2606.26324}'  # BibTeX Citation
+paperurl: 'https://arxiv.org/abs/2607.03117'  # Link to PDF
+citation: '@misc{costathompson2026,
+ title={Spectrally Tuned Bandwidth Selection for Kernel Fuzzy Relational Clustering }, 
+ author={Costa, Efthymios and R.J. Thompson, John},
+ year={2026},
+ eprint={2607.03117},
+ archivePrefix={arXiv},
+ primaryClass={stat.ME},
+ howpublished = {arXiv preprint},
+ url = {https://arxiv.org/abs/2607.03117}'  # BibTeX Citation
 authors: "<u>Efthymios Costa</u>, and John R.J. Thompson"  # You can add this if not yet defined
 ---
