@@ -12,6 +12,7 @@ author_profile: true
 
 {% if lead_modules.size > 0 %}
 <h2>Current Teaching (Module Lead)</h2>
+{% assign sorted_modules = lead_modules | sort: 'date' | reverse %}
 {% for post in lead_modules %}
 <h3>{{ post.title }}</h3>
 <p><i>{{ post.venue }}</i> &ndash; {{ post.year }}, {{ post.term }}</p>
