@@ -1,5 +1,5 @@
 ---
-title: "A unified approach to outlier identification for mixed-type data"
+title: "A unified approach to outlier identification for mixed-type continuous/ordinal data"
 collection: publications
 category: preprints
 permalink: /publication/costahennig2026
